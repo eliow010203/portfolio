@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/chrome.css">
+    <script src="./script/chrome.js" defer></script>
+</head>
+<body>
+    <div class="github">
+        <a href="https://github.com/eliow010203" title="깃허브 바로가기">
+            <img src="./img/github.svg" alt="깃허브 로고">
+        </a>
+    </div>
+    <div class="like_vscode">
+        <div class="vs_text">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+        <div class="v_var"></div>
+    </div>
+    <section class="con1">
+        <p class="main_title">
+            저는 개발하는<br>
+            디자이너가<br>
+            되고싶은<br>
+            이진우입니다.<br>
+        </p>
+        <div id="over1">
+            <div id="window1" class="windowpage"></div>
+            <div class="top">
+                <div class="tab_menu">
+                    <div class="tab">
+                        <i class="material-icons">close</i>
+                    </div>
+                    <i class="material-icons">add</i>
+                </div>
+                <div class="pageicon">
+                    <i class="material-icons pi1">expand_more</i>
+                    <i class="material-icons pi2">minimize</i>
+                    <div class="pi3">
+                        <a href="./hello.html">
+                            <div class="max"></div>
+                        </a>
+                    </div>
+                    <i class="material-icons pi4">close</i>
+                </div>
+                <div class="top_footer">
+                    <i class="material-icons back">arrow_back</i>
+                    <i class="material-icons forward">arrow_forward</i>
+                    <i class="material-icons refresh">refresh</i>
+                    <div class="url"></div>
+                    <div class="account"></div>
+                    <i class="material-icons more">more_vert</i>
+                </div>
+            </div>
+        </div>
+        <div id="page_con01">
+            <h1>안녕하세요!</h1>
+            <h2>안녕하세요!</h2>
+            <h3>안녕하세요!</h3>
+            <h4>안녕하세요!</h4>
+            <h5>안녕하세요!</h5>
+            <h6>안녕하세요!</h6>
+        </div>
+    </section>
+    <div class="wave_wrap" id="wave">
+        <div class="wave_r"></div>
+        <div class="wavebg1"></div>
+        <div class="wavebg2"></div>
+        <div class="wavebg3"></div>
+        <img src="./img/Wave1.svg" alt="" class="wave1">
+        <img src="./img/Wave2.svg" alt="" class="wave2">
+        <img src="./img/Wave3.svg" alt="" class="wave3">
+    </div>
+    <section class="con2">
+        
+    </section>
+
+
+    <script>
+        let waveEl = document.getElementById('wave')
+        let pageH = window.innerHeight
+        let pageW = window.innerWidth
+        waveEl.style.top=`-150px`
+        console.log(pageH)
+
+
+        const page01 = document.getElementById('page_con01')
+        const window01 = document.getElementById('window1')
+        window01.appendChild(page01)
+    </script>
+</body>
+</html>
