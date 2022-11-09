@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .frame{
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/skillbg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .title_box{
+            height: 20%;
+            border-bottom: 3px solid #fff;
+            width: 70%;
+            margin: 0px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .title_box p{
+            position: absolute;
+            color: #fff;
+            width: 100%;
+            height: 60px;
+            font-size: 50px;
+            font-weight: bold;
+            /* background-color: aliceblue; */
+            text-align: center;
+            bottom: 0px;
+        }
+
+        .contain{
+            top: 25%;
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            /* background-color: #fff; */
+        }
+
+        .s_contain{
+            margin: 0px auto;
+            height: 100%;
+            width: 66%;
+            display: grid;
+            grid-gap: 2%;
+            grid-template-columns: repeat(4, 24%);
+            grid-template-rows: repeat(2, 30%);
+            /* background-color: aquamarine; */
+        }
+
+        .item{
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0px 0px 5px #000;
+            transition: .3s;
+            overflow: hidden;
+            position: relative;
+        }
+        .item img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 65%;
+            width: 65%;
+            transition: .3s;
+        }
+        .item:nth-child(6) img{
+            width: unset !important;
+            height: 60%;
+        }
+        .item:hover{
+            transform: scale(1.1);
+            background-color: #000;
+        }
+        .item:hover img{
+            opacity: 0.3;
+            filter: blur(1px);
+            filter: brightness(.1);
+        }
+
+        
+        .github2{
+            width: 10%;
+            height: 10%;
+            overflow: hidden;
+            position: absolute;
+            bottom: 4%;
+            right: 1px;
+            z-index: 100;
+            border-radius: 50%;
+        }
+
+        .github2 a{
+            width: 100%;
+            height: 100%;
+        }
+
+        .github2 img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .stat{
+            position: absolute;
+            z-index: 100;
+            /* background-color: aqua; */
+            top: 50%;
+            color: #fff;
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(-50%);
+            /* mix-blend-mode: difference; */
+        }
+        .stat_box{
+            top: 100%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            opacity: 0;
+            transition: .6s;
+        }
+        .item:hover .stat{
+            opacity: 1;
+        }
+
+        .item:hover .stat_box{
+            opacity: .6;
+        }
+
+        .item:nth-child(1):hover .stat_box{top: 25%;}
+        .item:nth-child(2):hover .stat_box{top: 30%;}
+        .item:nth-child(3):hover .stat_box{top: 25%;}
+        .item:nth-child(4):hover .stat_box{top: 55%;}
+        .item:nth-child(5):hover .stat_box{top: 70%;}
+        .item:nth-child(6):hover .stat_box{top: 25%;}
+        .item:nth-child(7):hover .stat_box{top: 20%;}
+        .item:nth-child(8):hover .stat_box{top: 60%;}
