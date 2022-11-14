@@ -1,0 +1,20 @@
+@charset "utf-8";
+.intro_header{
+    font-size: 30px;
+    padding: 20px 10px;
+}
+.intro_info{
+    font-size: 16px;
+    padding: 0px 10px;
+    line-height: 20px;
+}
+.intro_list li{
+    padding: 0px 10px;
+    list-style:none;
+    line-height: 20px;
+}
+.intro_list_title{
+    padding: 20px 10px;
+    font-size: 30px;
+    font-weight: bold;
+}

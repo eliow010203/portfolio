@@ -6,13 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- css 초기화 -->
     <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- 메인 페이지 css -->
     <link rel="stylesheet" href="./css/page.css">
+
+    <!-- 크롬창 css -->
     <link rel="stylesheet" href="./css/chrome.css">
+
+    <!-- 크롬창 2번 컨텐츠 css  -->
     <link rel="stylesheet" href="./css/skill.css">
+
+    <!-- 크롬창 3번 컨텐츠 css  -->
+    <link rel="stylesheet" href="./css/intro.css">
+
+    <!-- 크롬창 스크립트 -->
     <script src="./script/chrome.js" defer></script>
+
+    <!-- 마우스 효과 스크립트 -->
+    <script src="./script/mouse.js" defer></script>
 </head>
 <body>
+
+    <canvas id="canvas">이 브라우저는 캔버스를 지원하지 않습니다. 다른브라우저를 사용하거나 브라우저를 업데이트 해주십시오</canvas>
+    <canvas id="canvas2">이 브라우저는 캔버스를 지원하지 않습니다. 다른브라우저를 사용하거나 브라우저를 업데이트 해주십시오</canvas>
+
+
+    <!-- 크롬창 1번 컨텐츠 -->
     <div id="page_con01">
         <h1>안녕하세요!</h1>
         <h2>안녕하세요!</h2>
@@ -21,6 +43,7 @@
         <h5>안녕하세요!</h5>
         <h6>안녕하세요!</h6>
     </div>
+    <!-- 크롬창 2번 컨텐츠 -->
     <div id="page_con02">
         <div class="github2">
             <a href="https://github.com/eliow010203" title="깃허브 바로가기">
@@ -77,11 +100,36 @@
             </div>
         </div>
     </div>
+    <!-- 크롬창 3번 컨텐츠 -->
+    <div id="page_con03">
+        <h1 class="intro_header">안녕하세요!</h1>
+        <p class="intro_info">
+            저는 프론트엔드를 꿈꾸는 디자이너가 되고싶은 이진우입니다.<br>
+            저는 구상하고 만드는것을 좋아합니다.<br>
+            웹 프론트엔드는 제가 구상한 디자인에 움직임과 상호작용같은<br>
+            동적인 부분을 추가할 수 있고 제가 제작한 웹 페이지를<br>
+            다른사람에게 보여주기도 편안한 부분이 있어서<br>
+            제게 매력적으로 다가왔습니다.<br>
+            <br>
+        </p>
+        <p class="intro_list_title">간단한 소개</p>
+        <ul class="intro_list">
+            <li>나이 : 만18세</li>
+            <li>취미 : 그림그리기, 게임</li>
+            <li>좋아하는것 : 만들기, </li>
+            <li>보유 자격증 : gtq(1급), gtq-i(1급), itq한글(A), itq파워포인트(A), itq엑셀(A), 전자출판편집기능사</li>
+            <li>사용가능 언어 : html, css, JavaScript</li>
+        </ul>
+    </div>
+
+    <!-- 깃허브 로고 -->
     <div class="github">
         <a href="https://github.com/eliow010203" title="깃허브 바로가기">
             <img src="./img/github.svg" alt="깃허브 로고">
         </a>
     </div>
+
+    <!-- 인트로 왼쪽 컨텐츠 -->
     <div class="like_vscode">
         <div class="vs_text">
             <p>1</p>
@@ -92,6 +140,8 @@
         </div>
         <div class="v_var"></div>
     </div>
+
+    <!-- 01. 인트로 컨텐츠 -->
     <section class="con1">
         <p class="main_title">
             저는 개발하는<br>
@@ -99,6 +149,8 @@
             되고싶은<br>
             이진우입니다.<br>
         </p>
+
+        <!-- 크롬창 1번 -->
         <div id="over1">
             <div id="window1" class="windowpage"></div>
             <div class="top">
@@ -130,6 +182,13 @@
         </div>
         
     </section>
+
+    <!-- 인트로 컨텐츠 대체용 -->
+    <div id="intro_ex">
+
+    </div>
+
+    <!-- 02. 파도오브젝트 -->
     <div class="wave_wrap" id="wave">
         <div class="wave_r"></div>
         <div class="wavebg1"></div>
@@ -139,6 +198,8 @@
         <img src="./img/Wave2.svg" alt="" class="wave2">
         <img src="./img/Wave3.svg" alt="" class="wave3">
     </div>
+
+    <!-- 03. 자기소개 컨텐츠 -->
     <section class="con2">
         <p class="con2_title">
             나에<br>
@@ -146,6 +207,24 @@
             About<br>
             Me</span>
         </p>
+
+        <div id="extext">
+            <p>
+                저는 <span>프론트엔드</span>를 꿈꾸는 디자이너가<br>
+                되고싶은 이진우입니다.<br>
+                저는 구상하고 만드는것을 좋아합니다.<br>
+                <span>웹 프론트엔드</span>는 제가 구상한 디자인에<br>
+                움직임과 <span>상호작용</span>같은<br>
+                동적인 부분을 추가할 수 있고<br>
+                제가 제작한 <span>웹 페이지</span>를<br>
+                다른사람에게 보여주기도<br>
+                편안한 부분이 있어서<br>
+                제게 <span>매력적</span>으로 다가왔습니다.<br>
+                <br>
+            </p>
+        </div>
+
+        <!-- 크롬창 2번 -->
         <div id="over2">
             <div id="window2" class="windowpage"></div>
             <div class="top">
@@ -175,6 +254,7 @@
                 </div>
             </div>
         </div>
+        <!-- 크롬창 3번 -->
         <div id="over3">
             <div id="window3" class="windowpage"></div>
             <div class="top">
@@ -205,42 +285,98 @@
             </div>
         </div>
     </section>
+
+    <!-- 04. 내 작업물 컨텐츠 -->
     <section class="con3">
         <p class="project_title"><span>My</span> Project</p>
+
+        <!-- 작업물 1번 -->
         <div class="project_item">
             <div class="p_cir">
-                <div class="p_cir_img"></div>
+                <div class="p_cir_img p_cir_img01">
+                    <a href="https://eliow010203.github.io/web_project/" title="웅진 프로젝트 바로가기"></a>
+                </div>
+                <p class="p_link">바로가기</p>
+            </div>
+            <div class="p_text_box">
+                <p>
+                    <span class="p_title">웅진 리뉴얼</span>
+                    <br>
+                    <br>
+                    기존에 있던 웅진사이트를
+                    조금 더 활동적으로 리뉴얼
+                    하였습니다.<br>
+                    <br>
+                    <br>
+                    <span class="p_title">사용기술</span>
+                    <br>
+                    <br>
+                    <span class="js">자바스크립트</span>
+                    <span class="css">CSS</span>
+                    <span class="html">HTML</span>
+
+
+                </p>
             </div>
         </div>
+
+        <!-- 작업물 2번 -->
         <div class="project_item">
             <div class="p_cir">
-                <div class="p_cir_img"></div>
+                <div class="p_cir_img p_cir_img02">
+                    <a href="https://eliow010203.github.io/coffee/" title="헤로피커피 프로젝트 바로가기"></a>
+                </div>
+                <p class="p_link">바로가기</p>
             </div>
         </div>
+
+        <!-- 작업물 3번 -->
         <div class="project_item">
             <div class="p_cir">
-                <div class="p_cir_img"></div>
+                <div class="p_cir_img p_cir_img03">
+                    <a href="#" title="포트폴리오 프로젝트 바로가기"></a>
+                </div>
+                <p class="p_link">바로가기</p>
+            </div>
+            <div class="p_text_box">
+                <p>
+                    <span class="p_title">포트폴리오</span>
+                    <br>
+                    <br>
+                    나의 포트폴리오입니다.<br>
+                    <br>
+                    <br>
+                    <span class="p_title">사용기술</span>
+                    <br>
+                    <br>
+                    <span class="js">자바스크립트</span>
+                    <span class="css">CSS</span>
+                    <span class="html">HTML</span>
+                    <span class="active_web">반응형 웹</span>
+
+
+                </p>
             </div>
         </div>
-        <div class="project_item">
-            <div class="p_cir">
-                <div class="p_cir_img"></div>
-            </div>
-        </div>
+
+
     </section>
 
+    <!-- 기타 컨텐츠 -->
     <section class="con4">
-        
+        <p></p>
     </section>
+
+    <footer>
+        <address>
+            ⓒ Lee jin woo. All Rights Reserved.
+        </address>
+    </footer>
 
 
     <script>
-        let waveEl = document.getElementById('wave')
-        let pageH = window.innerHeight
-        let pageW = window.innerWidth
-        waveEl.style.top=`-150px`
-        console.log(pageH)
 
+        // 대상을 보고있을때 클래스를 추가해서 보이게하는 스크립트
 
         const options = {
         root: null,
@@ -265,6 +401,7 @@
 
 
 
+        // 크롬창 안으로 컨텐츠 넣어주는 스크립트
         const page01 = document.getElementById('page_con01')
         const window01 = document.getElementById('window1')
         window01.appendChild(page01)

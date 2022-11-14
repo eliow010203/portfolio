@@ -1,4 +1,9 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html{
+    /* cursor: none; */
+}
 
 
 body{
@@ -7,18 +12,44 @@ body{
 }
 
 body::-webkit-scrollbar {
-    width: 15px;  /* 스크롤바의 너비 */
+    width: 7px;  /* 스크롤바의 너비 */
 }
 
 body::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
+    height: 20%; /* 스크롤바의 길이 */
     background: #6EFFE5; /* 스크롤바의 색상 */
     
     /* border-radius: 10px; */
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #6effe473;  /*스크롤바 뒷 배경 색상*/
+    background-color: #6effe43b;  /*스크롤바 뒷 배경 색상*/
+}
+
+/* 마우스 효과 */
+#canvas{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: 100;
+    user-select: none;
+    pointer-events: none;
+    color: #fff;
+}
+
+#canvas2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    user-select: none;
+    pointer-events: none;
+    color: #fff;
 }
 
 
@@ -86,6 +117,9 @@ body::-webkit-scrollbar-track {
 
 
 /* 파도효과 */
+#wave{
+    top: -150px;
+}
 .wave_wrap{
     width: 100%;
     overflow: hidden;
@@ -170,7 +204,7 @@ body::-webkit-scrollbar-track {
 /* 1. 인트로 */
 .con1{
     margin-left: 11vw;
-    height: 100vh;
+    height: 900px;
     /* background-color: #18A98F; */
     overflow: hidden;
 }
@@ -227,6 +261,16 @@ body::-webkit-scrollbar-track {
     font-size:  0.67rem;
 }
 
+/* 인트로 대체 */
+#intro_ex{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    background-color: #000;
+    top: 0px;
+    transition: .3s;
+}
+
 /* 2. 나에 대하여 */
 
 .con2_title{
@@ -239,8 +283,21 @@ body::-webkit-scrollbar-track {
     width: 95%;
 }
 
-.con2_title span{
+.con2_title span,#extext span{
     color: #6EFFE5;
+    font-weight: bold;
+}
+
+#extext{
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    width: 380px;
+    top: 750px;
+    left: 15vw;
+    transition: .3s;
+    line-height: 30px;
+    pointer-events: none;
 }
 
 #over2{
@@ -282,7 +339,7 @@ body::-webkit-scrollbar-track {
 /* 프로젝트 */
 .con3{
     /* background-color: #18A98F; */
-    height: 2900px;
+    /* height: 2900px; */
     width: 100%;
     /* overflow: hidden; */
     position: relative;
@@ -313,22 +370,137 @@ body::-webkit-scrollbar-track {
     width: 900px;
     top: -200px;
     left: -250px;
-    background-color: #ccc;
     border-radius: 700px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 14px #000;
 }
+
 .project_item .p_cir .p_cir_img{
     top: 200px;
     left: 250px;
     position: absolute;
     width: 650px;
     height: 500px;
-    background-image: url(../img/Jquary_icon.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    transition: .3s;
 }
+
+.project_item .p_cir .p_cir_img a{
+    display: block;
+    width: 650px;
+    height: 500px;
+}
+
+.project_item .p_cir .p_cir_img:hover{
+    transform: scale(1.1);
+}
+
+.project_item .p_cir:hover .p_link{
+    opacity: 1;
+}
+
+.project_item .p_cir .p_link{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    display: block;
+    width: 650px;
+    height: 500px;
+    text-indent: 60px;
+    font-size: 52px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 470px;
+    box-sizing: border-box;
+    color: #eee;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+}
+.p_cir_img01{
+    background-image: url(../img/project01.png);
+}
+.p_cir_img02{
+    background-image: url(../img/project02.png);
+}
+.p_cir_img03{
+    background-image: url(../img/project03.png);
+}
+
+.p_text_box{
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: #35DEC0 5px solid;
+    width: 45%;
+    height: 350px;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    color: #222;
+}
+
+.p_text_box p{
+    height: 250px;
+    margin-left: 10px;
+    /* background-color: #000; */
+    margin-top: 50px;
+    line-height: 20px;
+    /* text-indent: 10px; */
+}
+
+.p_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.js{
+    background-color: rgb(255, 217, 0);
+    font-weight: bold;
+    line-height: 30px;
+    display: inline-block;
+}
+.css{
+    background-color: #00a2ff;
+    color: #002941;
+    font-weight: bold;
+    line-height: 30px;
+    display: inline-block;
+}
+.html{
+    background-color: #ff5f02;
+    color: rgb(58, 12, 0);
+    line-height: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.active_web{
+    background-color: #02ff6b;
+    color: rgb(31, 78, 3);
+    line-height: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+
 .active_page{
     width: 70%;
     opacity: 1;
+}
+
+/* 푸터영역 */
+footer{
+    height: 100px;
+    border-top: #6EFFE5 3px solid;
+}
+
+footer address{
+    font-style: normal;
+    text-align: center;
+    color: #6EFFE5;
+    line-height: 70px;
 }
