@@ -1,20 +1,30 @@
 @charset "utf-8";
+.intro_img{
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    left: 5px;
+}
 .intro_header{
     font-size: 30px;
     padding: 20px 10px;
+    margin-left: 120px;
 }
 .intro_info{
     font-size: 16px;
     padding: 0px 10px;
     line-height: 20px;
+    margin-left: 120px;
 }
 .intro_list li{
     padding: 0px 10px;
     list-style:none;
     line-height: 20px;
+    margin-left: 120px;
 }
 .intro_list_title{
     padding: 20px 10px;
     font-size: 30px;
     font-weight: bold;
+    margin-left: 120px;
 }
