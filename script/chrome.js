@@ -31,15 +31,19 @@ function winCheck() {
 
     if(over01.offsetWidth<=470){
         over01.style.opacity='0'
+        over01.style.pointerEvents=`none`
     }else{
         over01.style.opacity='1'
+        over01.style.pointerEvents=`all`
     }
 
     if(over02.offsetWidth<=470){
         over02.style.opacity='0'
+        over02.style.pointerEvents=`none`
         extext.style.transform=`translate(-40px, -250px)`
     }else{
         over02.style.opacity='1'
+        over02.style.pointerEvents=`all`
         extext.style.transform=`translate(0px, 0px)`
     }
 
@@ -47,11 +51,13 @@ function winCheck() {
         over02.style.zIndex='10'
         over03.style.zIndex='1'
         over03.style.opacity='0'
+        over03.style.pointerEvents=`none`
         extext.style.opacity='1'
     }else{
         over03.style.zIndex='10'
         over02.style.zIndex='1'
         over03.style.opacity='1'
+        over03.style.pointerEvents=`all`
         extext.style.opacity='0'
     }
 
