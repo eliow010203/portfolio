@@ -437,6 +437,12 @@ body::-webkit-scrollbar-track {
 .p_cir_img03{
     background-image: url(../img/project03.png);
 }
+.p_cir_img04{
+    background-image: url(../img/project04.png);
+}
+.p_cir_img05{
+    background-image: url(../img/project05.png);
+}
 
 .p_text_box{
     height: 80%;
